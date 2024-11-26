@@ -81,8 +81,8 @@ public class HerokuAppTest extends DriverInit {
 
         Thread.sleep(2000);
 
-
-        for (int i = 0; i < 6; i++) {
+        int i = 0;
+        for (i = 0; i < 6; i++) {
             driver.findElement(By.xpath("/html/body/div[2]/div/div/div/input")).sendKeys(Keys.ARROW_RIGHT);
         }
         double expectedValueDouble = i * 0.5;
